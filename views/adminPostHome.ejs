@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature Photo API</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Admin Home</h1>
+    <h2>Add a post</h2>
+    <form action="api/postphoto" enctype="multipart/form-data" method="POST">
+      <div class="mb-3">
+        <label for="caption" class="form-label">Caption</label>
+        <textarea class="form-control" id="caption" name="caption"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="imgUpload" class="form-label">Image</label>
+        <input type="file" class="form-control" id="imageUpload" name="file">
+      </div>
+      <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+    </form>
+            <ul id="grid">
+              <% for(var i=0; i<photos.length; i++) {%>
+                <li class="col-6 justify-content-between mt-5">
+                    <img class="img-fluid" src="<%= photos[i].image%>">
+                </li>
+              <% } %>
+              </ul>
+      <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+  </body>
+</html>
