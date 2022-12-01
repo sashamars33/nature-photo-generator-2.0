@@ -6,5 +6,6 @@ const homeController = require("../controllers/home");
 
 router.post("/postphoto", upload.single("file"), homeController.postPhoto)
 router.get('/:id', photosController.getPhoto)
+router.get('/', photosController.getPhotos)
 
 module.exports = router;
