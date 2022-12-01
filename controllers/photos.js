@@ -11,7 +11,7 @@ module.exports = {
       },
       getPhotos: async (req, res) => {
         try{
-          const photos = await Photo.find({}).length
+          const photos = await Photo.find({})
           res.send(photos)
         }catch(err){
           console.log(err)
