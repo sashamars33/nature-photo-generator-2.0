@@ -1,6 +1,8 @@
 # nature-photo-generator-2.0
 An API that has photos of nature, plants, landscapes, etc. 
 
+The client-side application can be found at this repository: https://github.com/sashamars33/nature-photo-react-frontend
+
 An API for that returns images of natural areas. You too can have random nature photos on your website! To access the api use the url: https://enthusiastic-crab-windbreaker.cyclic.app/api
 
 If you like a specific photo you can access it by using: https://enthusiastic-crab-windbreaker.cyclic.app/api/number . Each photo has a corrisponding number displayed on the generating screen.
